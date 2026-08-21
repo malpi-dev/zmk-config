@@ -16,6 +16,13 @@
             bindings = <&kp LS(I) &kp T &kp X &kp W &kp B &kp T &kp AT &kp P &kp A &kp Y &kp N2 &kp N5 &kp N0 &kp N1>;
             label = "WIN_PSW";
         };
+
+        win_psw_2: win_psw_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(T) &kp E &kp M &kp P &kp O &kp R &kp A &kp L &kp N2 &kp N0 &kp N2 &kp N6 &kp EXCL>;
+            label = "WIN_PSW_2";
+        };
     };
 
     keymap {
@@ -87,7 +94,7 @@
         win_1 {
             bindings = <
 &kp ESC           &kp F1  &kp F2     &kp F3              &kp F4        &kp F5        &kp APOS   &trans    &kp UP    &trans     &trans     &kp BSPC
-&kp LSHFT         &kp F6  &kp LSHFT  &kp LC(LA(DELETE))  &win_psw      &kp F6        &kp GRAVE  &kp LEFT  &kp DOWN  &kp RIGHT  &kp GRAVE  &trans
+&kp LSHFT         &kp F6  &kp LSHFT  &kp LC(LA(DELETE))  &win_psw_2    &kp F6        &kp GRAVE  &kp LEFT  &kp DOWN  &kp RIGHT  &kp GRAVE  &trans
 &kp LEFT_CONTROL  &trans  &trans     &kp K_VOL_DN        &kp K_VOL_UP  &kp K_MUTE    &trans     &trans    &trans    &trans     &trans     &kp RCTRL
                                      &kp LGUI            &trans        &kp SPACE     &kp RET    &trans    &kp RALT
             >;
