@@ -84,10 +84,10 @@
 
         win_layer {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E      &kp R  &kp T        &kp Y    &kp U  &kp I     &kp O      &kp P    &kp BSPC
-&kp LSHFT  &kp A  &kp S  &kp D      &kp F  &kp G        &kp H    &kp J  &kp K     &kp L      &kp SQT  &kp RSHFT
-&kp LCTRL  &kp Z  &kp X  &kp C      &kp V  &kp B        &kp N    &kp M  &kp SEMI  &kp COMMA  &kp DOT  &kp RALT
-                         &kp RCTRL  &mo 5  &kp SPACE    &kp RET  &mo 6  &kp ESC
+&kp TAB       &kp Q  &kp W  &kp E             &kp R  &kp T        &kp Y    &kp U  &kp I     &kp O      &kp P    &kp BSPC
+&kp LEFT_WIN  &kp A  &kp S  &kp D             &kp F  &kp G        &kp H    &kp J  &kp K     &kp L      &kp SQT  &kp RSHFT
+&kp LEFT_ALT  &kp Z  &kp X  &kp C             &kp V  &kp B        &kp N    &kp M  &kp SEMI  &kp COMMA  &kp DOT  &kp RALT
+                            &kp LEFT_CONTROL  &mo 5  &kp SPACE    &kp RET  &mo 6  &kp ESC
             >;
         };
 
@@ -95,7 +95,7 @@
             bindings = <
 &kp ESC           &kp F1  &kp F2     &kp F3              &kp F4        &kp F5        &kp APOS   &trans    &kp UP    &trans     &trans     &kp BSPC
 &kp LSHFT         &kp F6  &kp LSHFT  &kp LC(LA(DELETE))  &win_psw_2    &kp F6        &kp GRAVE  &kp LEFT  &kp DOWN  &kp RIGHT  &kp GRAVE  &trans
-&kp LEFT_CONTROL  &trans  &trans     &kp K_VOL_DN        &kp K_VOL_UP  &kp K_MUTE    &trans     &trans    &trans    &trans     &trans     &kp RCTRL
+&kp LC(LEFT_WIN)  &trans  &trans     &kp K_VOL_DN        &kp K_VOL_UP  &kp K_MUTE    &trans     &trans    &trans    &trans     &trans     &kp RCTRL
                                      &kp LGUI            &trans        &kp SPACE     &kp RET    &trans    &kp RALT
             >;
         };
